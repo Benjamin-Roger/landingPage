@@ -1,5 +1,6 @@
-import '../assets/styles/index.css'
-import '../assets/styles/styles.scss'
+import '../assets/styles/index.css';
+
+import '../assets/styles/styles.scss';
 
 
 import { Layout } from '@/components/Layout';
