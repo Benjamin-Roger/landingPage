@@ -7,7 +7,8 @@ This website acts a landing page on https://benjaminroger.com/ . It aims to redi
 
 Execute
 ```
-git clone [https://github.com/Benjamin-Roger/landingPage]
+git clone https://github.com/Benjamin-Roger/landingPage
+cd landingPage
 npm i
 npm run dev
 
