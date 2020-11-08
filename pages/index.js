@@ -98,9 +98,10 @@ export async function getServerSideProps(context) {
 
   let resGitHub = await fetch(config.githubAPI);
 
-  var dataGitHub = await resGitHub.json();
+  var dataGitHub = await resGitHub
+  .json();
 
-  dataGitHub.sort(function (a, b) {
+  await dataGitHub.sort(function (a, b) {
     return new Date(b.updated_at) - new Date(a.updated_at);
   });
 
