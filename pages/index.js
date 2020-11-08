@@ -85,7 +85,12 @@ export default function IndexPage({ dataGitHub }) {
 
             <h2 className="text-2xl mb-3">{_("githubTitle")}</h2>
 
-            <GithubContainer dataGitHub={dataGitHub} />
+            {dataGitHub ?
+              <GithubContainer dataGitHub={dataGitHub} /> :
+              <>
+                <p>Github might limit API connections.</p>
+                <p>Visit my Github profile to see all the current repositories.</p>
+              </>}
 
           </div>
 
@@ -100,12 +105,15 @@ export async function getServerSideProps(context) {
 
   let resGitHub = await fetch(config.githubAPI);
 
-  var dataGitHub = await resGitHub
-    .json();
+  var dataGitHub = await resGitHub.json();
 
-  await dataGitHub.sort(function (a, b) {
-    return new Date(b.updated_at) - new Date(a.updated_at);
-  });
+  if (dataGitHub) {
+    dataGitHub.sort(function (a, b) {
+      return new Date(b.updated_at) - new Date(a.updated_at);
+    });
+  } else {
+    dataGitHub = []
+  };
 
   return {
     props: {
