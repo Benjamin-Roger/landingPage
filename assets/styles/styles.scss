@@ -45,18 +45,18 @@ body {
             width: 100%;
             height: 30%;
             background: linear-gradient(to top, #fff, transparent);
-            pointer-events:none;
-
-            // @media screen and (min-width: 768px) {
-            //     content: "";
-            // }
+            pointer-events: none;
         }
+    }
+}
 
-        // ul {
+.social {
+    &__item {
+        height: inherit;
+        width: 125px;
 
-        //     @media screen and (min-width:768px) {
-        //         max-height:500px;
-        //     }
-        // }
+        @media screen and (min-width:768px) {
+            width:150px;
+        }
     }
 }

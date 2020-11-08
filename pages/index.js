@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -30,23 +31,21 @@ const GithubContainer = ({ dataGitHub }) => {
 
 export default function IndexPage({ dataGitHub }) {
 
-  const iconContainer = (<ul className="flex justify-around flex-wrap mt-3">
+  const iconContainer = (<ul className="social flex justify-around flex-wrap mt-3">
     {config.socialLinks.map((link, key) =>
       <li
         style={{
-          height: "inherit",
-          width: "150px",
           background: link.color
         }}
         key={`link-${key}`}
-        className="block rounded mx-3 my-2 hover:animate-pulse flex-grow">
+        className="social__item block rounded mx-3 my-2 hover:animate-pulse flex-grow">
 
         <a href={link.url} title={link.name} alt={link.name} target="_blank" className="block w-full h-full p-5 text-center ">
           {link.icon ?
             <FontAwesomeIcon className="text-5xl text-white" icon={[link.source, link.icon]} />
             : ''}
           {link.source === 'img' ?
-            <img style={{ maxWidth: "100px" }} className="mt-4 mx-auto" alt="Malt" title="Malt" src={link.img} />
+            <Image width="130" height="40" className="mt-4 mx-auto" alt="Malt" title="Malt" src={link.img} />
             : ''}
           <p className="text-white mt-2 mb-1">
             {link.name || _(link.translatableString)}
