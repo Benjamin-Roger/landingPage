@@ -1,0 +1,62 @@
+@import "fonts";
+
+body {
+    font-family: "Inconsolata", monospace;
+    font-size: 16px;
+}
+
+.github {
+    &__item:last-of-type {
+        @apply mb-6;
+    }
+
+    &__homepage span {
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            opacity: 0.2;
+            @apply bg-teal-700;
+            @apply transition-all;
+            @apply duration-150;
+            width: 0%;
+            height: 150%;
+            left: -5%;
+            right: 0;
+            transform: skewX(-20deg);
+        }
+
+        &:hover {
+            &::before {
+                width: 110%;
+            }
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(to top, #fff, transparent);
+            pointer-events:none;
+
+            @media screen and (min-width: 768px) {
+                content: "";
+            }
+        }
+
+        ul {
+
+            @media screen and (min-width:768px) {
+                max-height:500px;
+            }
+        }
+    }
+}
