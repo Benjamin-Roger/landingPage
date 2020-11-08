@@ -67,6 +67,7 @@ class ShadowScrollbars extends Component {
                     ref="scrollbars"
                     onUpdate={this.handleUpdate}
                     renderThumbVertical={this.renderThumb}
+                    universal={true}
                     {...props} />
                 <div
                     ref="shadowTop"
