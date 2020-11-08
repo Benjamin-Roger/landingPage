@@ -7,10 +7,10 @@ This website acts a landing page on https://benjaminroger.com/ . It aims to redi
 
 Execute
 ```
-git clone [gitRepoUrl]
+git clone [https://github.com/Benjamin-Roger/landingPage]
 npm i
 npm run dev
 
 ```
 
-Deploy it to the cloud with [Vercel](gitRepoUrl).
+Deploy it to the cloud with [Vercel](https://vercel.com/import/project?template=https://github.com/Benjamin-Roger/landingPage).
