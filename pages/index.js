@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Head from 'next/head'
+import Link from 'next/link';
+import Head from 'next/head';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -8,25 +8,30 @@ import { faGlobeEurope, faFile } from '@fortawesome/free-solid-svg-icons';
 
 library.add({ faGithub, faLinkedin, faWhatsapp, faGlobeEurope, faFile });
 
-
 import _ from '@/libs/i18n'
-
 import config from '../config.js';
+
 import { GithubItem } from '@/components/GithubItem.js';
+import ShadowScrollBar from '@/components/ShadowScrollBar';
+
 
 
 const GithubContainer = ({ dataGitHub }) => {
 
-  return <ul className="md:overflow-y-scroll mb-5">
-    {dataGitHub.map((repo, key) => <GithubItem key={`git${key}`} {...repo} />)}
-  </ul>;
+  return (<div>
+    <ShadowScrollBar style={{ height: 500 }}>
+      <ul className="mb-5 mr-4">
+        {dataGitHub.map((repo, key) => <GithubItem key={`git${key}`} {...repo} />)}
+      </ul>
+    </ShadowScrollBar>
+  </div >);
 
 }
 
 export default function IndexPage({ dataGitHub }) {
 
   const iconContainer = (<ul className="flex justify-around flex-wrap mt-3">
-    {config.socialLinks.map((link,key) =>
+    {config.socialLinks.map((link, key) =>
       <li
         style={{
           height: "inherit",
@@ -59,7 +64,7 @@ export default function IndexPage({ dataGitHub }) {
       <Head>
         <title>{config.fullName}</title>
       </Head>
-      <main className="mx-auto mt-24 p-6 w-full">
+      <main className="mx-auto mt-3 lg:mt-24 p-6 w-full">
 
         <div className="grid md:grid-cols-2 grid-cols-1">
 
