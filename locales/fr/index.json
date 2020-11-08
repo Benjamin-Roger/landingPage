@@ -1,9 +1,8 @@
 {
-    "hero":"Bienvenue !",
-    "intro":"Intéressé par mes services de chef de projet, consultant SI ou développeur Web ?  Retrouvez moi sur :",
-    "seeProject":"Visiter le projet",
-    "githubTitle":"Mes derniers projets sur Github",
-    "onlineSite":"Site professionnel",
-    "onlineResume":"📄 CV en ligne",
-    "maltIntro":"Un projet ? Je travaille sur la plate-forme Malt!"
+    "hero": "Bienvenue !",
+    "intro": "Intéressé par mes services de chef de projet, consultant SI ou développeur Web ?  Retrouvez moi sur :",
+    "seeProject": "Visiter le projet",
+    "githubTitle": "Mes derniers projets sur Github",
+    "onlineSite": "Site freelance",
+    "onlineResume": "CV en ligne"
 }

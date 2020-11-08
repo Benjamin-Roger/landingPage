@@ -1,9 +1,8 @@
 {
-    "hero":"Welcome!",
-    "intro":"Looking for a developer, a project manager, a strategy IT consultant ? Find me on:",
-    "seeProject":"Visit the project",
-    "githubTitle":"My last projects on Github",
-    "onlineSite":"Business site",
-    "onlineResume":"📄 Online resume",
-    "maltIntro":"A project? I work on the freelance platform Malt!"
+    "hero": "Welcome!",
+    "intro": "Looking for a developer, a project manager, a strategy IT consultant ? Find me on:",
+    "seeProject": "Visit the project",
+    "githubTitle": "My last projects on Github",
+    "onlineSite": "Business site",
+    "onlineResume": "Online resume"
 }
