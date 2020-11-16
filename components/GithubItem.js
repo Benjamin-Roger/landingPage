@@ -16,7 +16,7 @@ export const GithubItem = ({ name, html_url, description, homepage, loading }) =
             <h3 className="font-extrabold text-teal-700"><a href={html_url} title={name} rel="nofollow">{name}</a></h3>
             : placeholder()
         }
-        <p>{!loading ? description : <>{placeholder(72)}</>}</p>
+        <p>{!loading ? description : placeholder(72)}</p>
         {homepage ? <p className="text-right mt-3">
             <a
                 className="github__homepage font-semibold text-teal-700 "
