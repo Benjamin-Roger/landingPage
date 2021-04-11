@@ -38,20 +38,20 @@ module.exports = {
             url: `https://wa.me/${WHATSAPP_HANDLE}`,
             color: `#075E54`
         },
-        {
-            source: 'img',
-            img: '/images/malt.png',
-            name: 'Malt',
-            url: `${MALT_URL}`,
-            color:`#FF5C57`
-        },
-        {
-            source: 'fas',
-            icon: 'globe-europe',
-            translatableString: 'onlineSite',
-            url: `${OFFICIAL_WEBSITE}`,
-            color:`linear-gradient(90deg,#037657,#0fd19e 75%)`
-        },
+        // {
+        //     source: 'img',
+        //     img: '/images/malt.png',
+        //     name: 'Malt',
+        //     url: `${MALT_URL}`,
+        //     color:`#FF5C57`
+        // },
+        // {
+        //     source: 'fas',
+        //     icon: 'globe-europe',
+        //     translatableString: 'onlineSite',
+        //     url: `${OFFICIAL_WEBSITE}`,
+        //     color:`linear-gradient(90deg,#037657,#0fd19e 75%)`
+        // },
         {
             source: 'fas',
             icon: 'file',

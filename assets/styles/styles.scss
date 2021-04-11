@@ -53,10 +53,6 @@ body {
 .social {
     &__item {
         height: inherit;
-        width: 125px;
 
-        @media screen and (min-width:768px) {
-            width:150px;
-        }
     }
 }

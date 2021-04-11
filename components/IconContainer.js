@@ -10,14 +10,14 @@ library.add({ faGithub, faLinkedin, faWhatsapp, faGlobeEurope, faFile });
 import _ from '@/libs/i18n';
 
 
-const IconContainer = ({socialLinks}) => (<ul className="social flex justify-around flex-wrap mt-3">
+const IconContainer = ({socialLinks}) => (<ul className="social flex justify-around flex-wrap mt-3 gap-3">
   {socialLinks.map((link, key) =>
     <li
       style={{
         background: link.color
       }}
       key={`link-${key}`}
-      className="social__item block rounded mx-3 my-2 hover:animate-pulse flex-grow">
+      className="social__item flex rounded hover:animate-pulse w-full md:w-1/3 flex-grow">
 
       <a href={link.url} title={link.name} alt={link.name} target="_blank" className="block w-full h-full p-5 text-center ">
         {link.icon ?
